@@ -47,7 +47,7 @@ In brief the launch procedure looks like this:
   parameters, such as the patient identifier (id) and treatment identifier (id).
 - The module application can now access the FHIR resource service with the access token.
 
-![SMART on FHIR Application Launch Framework](diagrams/SMART on FHIR Application Launch Framework.png)
+![SMART on FHIR Application Launch Framework](diagrams/SMART%20on%20FHIR%20Application%20Launch%20Framework.png)
 
 For more information about SMART on FHIR Application Launch Framework please take a look at
 the [SMART on FHIR Application Launch Framework documentation](https://hl7.org/fhir/smart-app-launch/).
