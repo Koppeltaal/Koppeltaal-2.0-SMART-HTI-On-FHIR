@@ -12,7 +12,7 @@ take away limitations.
 Both SMART App Launch Framework and HTI have similar use cases. The intention of both is to start e-health modules from
 a portal like environment.
 
-![Simple Launch](diagrams/Simple Launch.png)
+![Simple Launch](diagrams/Simple%20Launch.png)
 
 The SMART App Launch Framework starts applications from one application in the same health context to another
 application in the same health context, whereas HTI is designed to be able to work between non-health and health
