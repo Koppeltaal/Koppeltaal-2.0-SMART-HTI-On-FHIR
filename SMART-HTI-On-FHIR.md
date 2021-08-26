@@ -26,7 +26,7 @@ The SMART App Launch Framework is designed around OAuth 2.0 and a FHIR resource 
 parameters. One of these parameters is a launch token. The launch token is used in the subsequent OAuth 2.0 flow to
 correlate the launch with the launch context.
 
-![Smart on FHIR conceptual](diagrams/Smart on FHIR conceptual.png)
+![Smart on FHIR conceptual](diagrams/Smart%20on%20FHIR%20conceptual.png)
 
 The SMART App Launch Framework allows launching applications to:
 
