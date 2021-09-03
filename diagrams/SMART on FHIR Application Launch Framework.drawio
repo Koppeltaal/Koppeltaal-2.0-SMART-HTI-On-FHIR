@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-03T09:09:12.706Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="rgYCyveGPTCZxv15fj4u" version="15.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-03T12:37:13.990Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="z0HH5lPHt8CWll5buv_1" version="15.0.6" type="github">
   <diagram id="Xceh6YoExhiWnQSg53VG" name="Page-1">
     <mxGraphModel dx="946" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
         <mxCell id="GJXDeXxpzOyA6pzPRUs3-9" value="FHIR resource service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="460" y="40" width="100" height="460" as="geometry" />
         </mxCell>
-        <mxCell id="GJXDeXxpzOyA6pzPRUs3-10" value="start (launch, iss)" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;" parent="1" source="GJXDeXxpzOyA6pzPRUs3-7" target="GJXDeXxpzOyA6pzPRUs3-6" edge="1">
+        <mxCell id="GJXDeXxpzOyA6pzPRUs3-10" value="start" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;" parent="1" source="GJXDeXxpzOyA6pzPRUs3-7" target="GJXDeXxpzOyA6pzPRUs3-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="165" y="170" as="sourcePoint" />
             <Array as="points">
@@ -94,6 +94,21 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="238" y="478" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="MK0QkKAICRu2Xeo_cFou-2" value="launch,iss" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="90" y="120" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MK0QkKAICRu2Xeo_cFou-4" value="launch" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="240" y="240" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MK0QkKAICRu2Xeo_cFou-7" value="code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="240" y="320" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MK0QkKAICRu2Xeo_cFou-8" value="code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="MK0QkKAICRu2Xeo_cFou-9" value="id &amp;amp; access token, context" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="240" y="400" width="130" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
