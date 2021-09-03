@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-03T12:32:22.862Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="osPsNy4ZR52tJ_AjesjX" version="15.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-03T12:51:16.972Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="1r6-Fy_sAtp1n-8_Z3Zk" version="15.0.6" type="github">
   <diagram id="VGXvJIXOLv8DUKHeHt5N" name="Page-1">
     <mxGraphModel dx="946" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,7 +13,7 @@
         <mxCell id="-XDd9_b0Rb5PniTTwB9Y-72" value="FHIR resource service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="460" y="40" width="100" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="-XDd9_b0Rb5PniTTwB9Y-73" value="start (launch, iss)" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;" parent="1" edge="1">
+        <mxCell id="-XDd9_b0Rb5PniTTwB9Y-73" value="start" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="89.5" y="180" as="sourcePoint" />
             <Array as="points">
@@ -65,7 +65,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="-XDd9_b0Rb5PniTTwB9Y-83" value="/token (code)" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" edge="1">
+        <mxCell id="-XDd9_b0Rb5PniTTwB9Y-83" value="/token" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="235" y="420" as="sourcePoint" />
             <mxPoint x="365" y="420" as="targetPoint" />
@@ -118,6 +118,21 @@
         </mxCell>
         <mxCell id="-XDd9_b0Rb5PniTTwB9Y-93" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="-XDd9_b0Rb5PniTTwB9Y-92" vertex="1">
           <mxGeometry x="45" y="70" width="10" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="hiPCgUUdK7GHuiICHYWD-1" value="launch (JWT), iss" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="85" y="180" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hiPCgUUdK7GHuiICHYWD-2" value="launch (HTI)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="240" y="300" width="125" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hiPCgUUdK7GHuiICHYWD-3" value="code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="240" y="376" width="125" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hiPCgUUdK7GHuiICHYWD-4" value="code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="240" y="420" width="125" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hiPCgUUdK7GHuiICHYWD-5" value="id &amp;amp; access token, context" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
+          <mxGeometry x="235" y="496" width="130" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
