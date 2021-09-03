@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-03T12:51:16.972Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="1r6-Fy_sAtp1n-8_Z3Zk" version="15.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-03T13:19:11.322Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.2 Safari/605.1.15" etag="2CKQPyp7aPjEhkib1Yx1" version="15.0.6" type="github">
   <diagram id="VGXvJIXOLv8DUKHeHt5N" name="Page-1">
-    <mxGraphModel dx="946" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="631" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -91,15 +91,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="-XDd9_b0Rb5PniTTwB9Y-88" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
-          <mxGeometry x="85" y="140" width="10" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="-XDd9_b0Rb5PniTTwB9Y-89" value="create JWT" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" parent="1" target="-XDd9_b0Rb5PniTTwB9Y-88" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="90" y="120" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="120" y="120" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry x="85" y="110" width="10" height="110" as="geometry" />
         </mxCell>
         <mxCell id="-XDd9_b0Rb5PniTTwB9Y-90" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="1" vertex="1">
           <mxGeometry x="370" y="450" width="10" height="40" as="geometry" />
@@ -133,6 +125,19 @@
         </mxCell>
         <mxCell id="hiPCgUUdK7GHuiICHYWD-5" value="id &amp;amp; access token, context" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#0000CC;" vertex="1" parent="1">
           <mxGeometry x="235" y="496" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hiPCgUUdK7GHuiICHYWD-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-XDd9_b0Rb5PniTTwB9Y-88" target="-XDd9_b0Rb5PniTTwB9Y-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="120" />
+              <mxPoint x="120" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hiPCgUUdK7GHuiICHYWD-13" value="create JWT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hiPCgUUdK7GHuiICHYWD-11">
+          <mxGeometry y="2" relative="1" as="geometry">
+            <mxPoint x="33" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
