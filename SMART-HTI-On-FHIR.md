@@ -59,7 +59,17 @@ user, desired activity for the launch) can be provided at the end of the OAuth2.
 would require the OAuth2.0 authorization module to have access to that information. In the case where the authorization
 module is independent of the launching application, there needs to be developed a custom method for exchanging that
 information with the launching platform. Also, in an architecture where multiple portal applications can launch modules,
-the OAuth2.0 authorization module needs to know where to find the portal application to query the requiered information.
+the OAuth2.0 authorization module needs to know where to find the portal application to query the required information.
+
+In the diagram below, this problem is visualized. The context consists of:
+
+- The user(s) that are involved in the launch
+- The specific module that needs to be started.
+- The specific task that needs to be started (to be able to continue or review existing task)
+
+The green flow displays the desired flow of information, the blue flow a possbible way of solving the problem.
+
+![SMART on FHIR Application Launch Framework](diagrams/SMART%20on%20FHIR%20Application%20Launch%20Framework%20-%20Context.drawio.png)
 
 ## What is Health Tools Interoperability (HTI)
 
@@ -89,6 +99,13 @@ HTI is developed as a lightweight standard, the exchange of FHIR resources is de
 smart_on_fhir). Module applications that want to update status information of the task need to be make use of the
 profile in order to do so.
 
+### The context in HTI
+
+As the HTI launch token contains a FHIR task, thereby, the relevant context information is encoded in the JWT token. 
+The module application must validate and unpack the token in order to access the context.  
+
+![HTI Sequence - Context](diagrams/HTI%20Sequence%20-%20Context.drawio.png)
+
 ## SMART HTI on FHIR: HTI and SMART on FHIR are complimentary technologies
 
 The approach of SMART HTI on FHIR is to integrate both technologies seamlessly. The SMART App Launch Framework defines
@@ -108,24 +125,42 @@ Main advantages of this approach is:
   or discovery of - the launching portal is no longer required.
 
 Main impact of this approach
+
 - Launching platforms should populate the launch token with a valid HTI launch token
-- The authorization service in the OAuth 2.0 sequence should populate the context with the attributes from the HTI 
-  token.  
+- The authorization service in the OAuth 2.0 sequence should populate the context with the attributes from the HTI
+  token.
 
 In brief the launch procedure looks like this:
+
 - The portal application generates a JWT token with a JSON serialized FHIR task.
-- The launching platform redirects to the module application with the HTI token as the launch token (launch) and an 
+- The launching platform redirects to the module application with the HTI token as the launch token (launch) and an
   issuer (iss).
-- The module application can choose to validate the HTI launch token and start the application. In this case the 
-  flow endes here. If the module application chooses to continue with the SMART App Launch Framework, the flow 
-  continues with the next steps.
+- The module application can choose to validate the HTI launch token and start the application. In this case the flow
+  endes here. If the module application chooses to continue with the SMART App Launch Framework, the flow continues with
+  the next steps.
 - The module application looks up the conformance statement of the issuer (iss). The conformance statement contains the
   authorization and token URL.
 - The module application redirects the user to the authorization URL with the launch token, the user is authenticated
   and authorized and returns with a code.
 - The module application requests an access token with the corresponding code and credentials at the token endpoint of
-  the authorization service. The response contains an access token, refresh token, and the context
-  parameters extracted from the HTI token.
+  the authorization service. The response contains an access token, refresh token, and the context parameters extracted
+  from the HTI token.
 - The module application can now access the FHIR resource service with the access token.
 
 ![SMART HTI on FHIR](diagrams/SMART%20HTI%20on%20FHIR.png)
+
+#### Solving the context problem
+
+The HTI token contains the context information and is created in the portal context, such as user and a reference to the
+activity definition and task identifier. The HTI token is passed as launch parameter as part of the SMART application
+launch framework. The launch parameter is passed onto the authorization service at the authorization step. At the 
+token request, the authorization service unpacks the launch token and validates the signature. The authorization
+service can populate the token response with the relevant context information retrieved from the HTI token.
+
+The diagram below shows how the information flows.
+
+![diagrams/SMART HTI on FHIR - Context.drawio](diagrams/SMART%20HTI%20on%20FHIR%20-%20Context.drawio.png)
+
+By using the HTI token as transport for the context, the context can be exchanged with the authorization service and 
+the module application.
+
